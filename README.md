@@ -5,8 +5,12 @@
 >基于https://github.com/ACRA/acra 调整而来，方便使用，感谢ACEA的贡献
 
 ### 导入：
+你的app/build.gradle中加入以下的代码
 ```java
- compile 'com.jwkj:CrashExceptioner:v2.0.2'
+dependencies {
+    ...
+    compile 'com.jwkj:CrashExceptioner:v2.0.2'
+ }
 ```
 
 >温馨提示：如果你想修改默认错误页面的ui，建议你下载源码，以module方式引入项目
