@@ -6,7 +6,7 @@
 
 ### 导入：
 ```java
- compile 'com.jwkj:CrashExceptioner:v2.0.1'
+ compile 'com.jwkj:CrashExceptioner:v2.0.2'
 ```
 
 >温馨提示：如果你想修改默认错误页面的ui，建议你下载源码，以module方式引入项目
@@ -29,4 +29,4 @@ public class YourApp extends Application {
 - 支持更多语言
 - 可自定义错误页面
 
-![](https://github.com/jwkj/LibZXing/blob/master/crash.gif)
+![](https://github.com/huangdali/CrashExcptioner/blob/master/crash.gif)
