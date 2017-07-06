@@ -23,8 +23,8 @@ public class YourApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        CrashExceptioner.init(this);
-        ...
+         ...
+        CrashExceptioner.init(this);//最好放在onCreate方法的最后
     }
 }
 ```
