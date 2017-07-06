@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CrashExcptioner</string>
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">哎呀，程序出错啦(＞﹏＜)</string>
+    <string name="customactivityoncrash_error_activity_unknown_exception">未知异常</string>
+    <string name="customactivityoncrash_error_activity_restart_app">重启APP</string>
+    <string name="customactivityoncrash_error_activity_close_app">关闭App</string>
+    <string name="customactivityoncrash_error_activity_error_details">查看详细日志</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">详细错误</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">关闭</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">复制</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">复制成功</string>
+</resources>
