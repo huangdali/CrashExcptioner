@@ -9,7 +9,7 @@
 ```java
 dependencies {
     ...
-    compile 'com.jwkj:CrashExceptioner:v2.0.2'
+    compile 'com.jwkj:CrashExceptioner:v2.0.3'
  }
 ```
 
@@ -25,6 +25,7 @@ public class YourApp extends Application {
         super.onCreate();
          ...
         CrashExceptioner.init(this);//最好放在onCreate方法的最后
+        //CrashExceptioner.setShowErrorDetails(false);//设置不显示详细错误按钮，默认为true
     }
 }
 ```
@@ -34,3 +35,14 @@ public class YourApp extends Application {
 - 可自定义错误页面
 
 ![](https://github.com/huangdali/CrashExcptioner/blob/master/crash.gif)
+
+### 版本记录
+2.0.3
+- 【优化】修改默认错误页面的背景色为白色
+- 【新增】提供设置是否显示“查看错误日志”按钮的接口(默认是true)
+
+2.0.2
+- 【修复】支持minSdk为11
+
+2.0.1
+- 【发布】正式发布

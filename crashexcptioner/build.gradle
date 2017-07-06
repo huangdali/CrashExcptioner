@@ -38,7 +38,7 @@ publish{
     userOrg = 'huangdali'//bintray.com的用户名
     groupId = 'com.jwkj'//jcenter上的路径
     artifactId = 'CrashExceptioner'//项目名称
-    publishVersion = 'v2.0.2'//版本号
+    publishVersion = 'v2.0.3'//版本号
     desc = '全局异常捕获器，带默认app错误信息页'//描述，不重要
     website = siteUrl//项目主页
 }

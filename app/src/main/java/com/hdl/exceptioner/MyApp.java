@@ -13,5 +13,6 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         CrashExceptioner.init(this);
+        CrashExceptioner.setShowErrorDetails(false);//设置不显示详细错误按钮，默认为true
     }
 }

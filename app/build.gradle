@@ -28,5 +28,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     testCompile 'junit:junit:4.12'
 //    compile project(path: ':crashexcptioner')
-    compile 'com.jwkj:CrashExceptioner:v2.0.2'
+    compile 'com.jwkj:CrashExceptioner:v2.0.3'
 }

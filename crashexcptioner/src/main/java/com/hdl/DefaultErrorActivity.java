@@ -49,7 +49,9 @@ public final class DefaultErrorActivity extends Activity {
         }
 
         Button moreInfoButton = (Button) findViewById(R.id.customactivityoncrash_error_activity_more_info_button);
-
+        if (!CrashExceptioner.isShowErrorDetails()) {//用户设置不显示错误信息
+            moreInfoButton.setVisibility(View.GONE);
+        }
         if (CrashExceptioner.isShowErrorDetailsFromIntent(getIntent())) {
 
             moreInfoButton.setOnClickListener(new View.OnClickListener() {

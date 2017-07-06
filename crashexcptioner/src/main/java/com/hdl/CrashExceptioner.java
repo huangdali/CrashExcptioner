@@ -48,6 +48,7 @@ public final class CrashExceptioner {
     private static boolean enableAppRestart = true;
     private static Class<? extends Activity> errorActivityClass = null;
     private static Class<? extends Activity> restartActivityClass = null;
+    private static boolean isShowDetailErrorBtn = true;//是否显示详细错误按钮
 
     public static void init(Context context) {
         try {
@@ -185,6 +186,15 @@ public final class CrashExceptioner {
         }
     }
 
+    public boolean isShowDetailErrorBtn() {
+        return isShowDetailErrorBtn;
+    }
+
+    public CrashExceptioner setShowDetailErrorBtn(boolean showDetailErrorBtn) {
+        isShowDetailErrorBtn = showDetailErrorBtn;
+        return this;
+    }
+
     public static boolean isShowErrorDetailsFromIntent(Intent intent) {
         return intent.getBooleanExtra(CrashExceptioner.EXTRA_SHOW_ERROR_DETAILS, true);
     }
@@ -244,15 +254,19 @@ public final class CrashExceptioner {
     public static boolean isLaunchErrorActivityWhenInBackground() {
         return launchErrorActivityWhenInBackground;
     }
+
     public static void setLaunchErrorActivityWhenInBackground(boolean launchErrorActivityWhenInBackground) {
         CrashExceptioner.launchErrorActivityWhenInBackground = launchErrorActivityWhenInBackground;
     }
+
     public static boolean isShowErrorDetails() {
         return showErrorDetails;
     }
+
     public static void setShowErrorDetails(boolean showErrorDetails) {
         CrashExceptioner.showErrorDetails = showErrorDetails;
     }
+
     public static boolean isEnableAppRestart() {
         return enableAppRestart;
     }
@@ -260,15 +274,19 @@ public final class CrashExceptioner {
     public static void setEnableAppRestart(boolean enableAppRestart) {
         CrashExceptioner.enableAppRestart = enableAppRestart;
     }
+
     public static Class<? extends Activity> getErrorActivityClass() {
         return errorActivityClass;
     }
+
     public static void setErrorActivityClass(Class<? extends Activity> errorActivityClass) {
         CrashExceptioner.errorActivityClass = errorActivityClass;
     }
+
     public static Class<? extends Activity> getRestartActivityClass() {
         return restartActivityClass;
     }
+
     public static void setRestartActivityClass(Class<? extends Activity> restartActivityClass) {
         CrashExceptioner.restartActivityClass = restartActivityClass;
     }
@@ -364,6 +382,7 @@ public final class CrashExceptioner {
 
         return null;
     }
+
     @SuppressWarnings("unchecked")
     private static Class<? extends Activity> getLauncherActivity(Context context) {
         Intent intent = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());
@@ -378,6 +397,7 @@ public final class CrashExceptioner {
 
         return null;
     }
+
     private static Class<? extends Activity> guessErrorActivityClass(Context context) {
         Class<? extends Activity> resolvedActivityClass;
 
@@ -410,6 +430,7 @@ public final class CrashExceptioner {
 
         return null;
     }
+
     private static void killCurrentProcess() {
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(10);
