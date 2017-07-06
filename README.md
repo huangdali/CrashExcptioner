@@ -28,3 +28,5 @@ public class YourApp extends Application {
 - 可定制默认错误页UI
 - 支持更多语言
 - 可自定义错误页面
+
+![](https://github.com/jwkj/LibZXing/blob/master/crash.gif)
