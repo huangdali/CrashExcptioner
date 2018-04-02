@@ -1,4 +1,4 @@
-## CrashExceptioner
+## CrashExceptioner [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/huangdali/jwkj/CrashExceptioner/images/download.svg) ](https://bintray.com/huangdali/jwkj/CrashExceptioner/_latestVersion)
 
 全局异常捕获器，带默认app错误信息页，一行代码集成，中、英两种翻译
 
